@@ -26,18 +26,10 @@
    - 동일한 뉴스 제목을 입력하여 조회(Read)합니다.
    - 방금 AI가 판별하여 저장한 팩트체크 결과값을 확인할 수 있습니다.
 
-## Executive Summary
-This is exactly why we need to separate 'reading' from 'executing' at the infrastructure level. Single-model agents will always merge data and instructions—it's an LLM's natural state. By introducing 'Greyboxing' and decentralized consensus, GenLayer forces untrusted inputs through multiple secret defenses and semantic paraphrasing before any wallet is touched. The Morse code hijack wouldn't survive this kind of decentralized scrutinization.
+
 
 ---
 
-## 자율형 AI 에이전트의 금융 거래, ‘단 한 줄의 해킹 없이’ 20만 달러를 털린 기술적 이유와 GenLayer의 Greyboxing·다수결 분산 방어 아키텍처
-
-자율형 AI 에이전트(Autonomous AI Agent)가 단순한 챗봇을 넘어 사용자 대신 금융 자산을 운용하고 결제까지 처리하는 '에이전틱 경제(Agentic Economy)'가 본격화되고 있습니다. 하지만 AI에게 지갑(Wallet)과 온체인 거래 접근 권한을 부여하는 순간, 우리는 완전히 새로운 차원의 보안 위협에 직면하게 됩니다.
-
-2026년 5월 발생한 '모스 부호 하이재킹(Morse Code Hijacking)' 사건은 이러한 우려가 현실이 되었음을 보여주는 대표적인 사례입니다. 당시 한 공격자는 트위터 상에 평범한 텍스트와 함께 '모스 부호'로 변환된 은밀한 이체 지시를 숨겨놓았습니다. AI 모델 'Grok'이 이 트윗을 분석하는 과정에서 모스 부호를 해독했고, 이 해독된 데이터가 거래 실행 에이전트인 'Bankrbot'에 전달되면서 결국 15만~20만 달러에 달하는 자산이 공격자의 지갑으로 이체되었습니다.
-
-전통적인 화이트햇·블랙햇 해킹처럼 프라이빗 키(Private Key)를 탈취하거나 스마트 컨트랙트의 취약점을 공격한 것이 아닙니다. 공격자는 그저 AI가 읽어 들여야 하는 외부 정보 속에 악의적인 '지시사항'을 숨겨놓았을 뿐입니다. 이를 '프롬프트 인젝션(Prompt Injection)'이라고 부릅니다.
 
 ### 1. 기술적 근원: '데이터(Data)'와 '명령어(Instruction)'의 경계 붕괴
 대형 언어 모델(LLM)을 기반으로 작동하는 AI 에이전트는 본질적으로 비결정론적(Non-deterministic) 모델입니다. 전통적인 소프트웨어는 코드(규칙)와 데이터(인풋)를 메모리 수준에서 엄격히 분리하여 처리하지만, 자연어를 입력받는 LLM은 '내가 분석해야 할 데이터'와 '내가 따라야 할 명령어'를 내부적으로 명확히 격리하지 못합니다.
